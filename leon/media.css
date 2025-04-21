@@ -1,0 +1,67 @@
+@media (max-width :930px)  {
+    div.explain{
+        flex-wrap: wrap;
+
+    }
+
+}
+@media (max-width :733px)  {
+    div.explain div{
+        flex-grow: 1;
+
+    }
+
+}
+@media (max-width:1200px) {
+     .services div.img-ex   {
+        display: none;
+     }
+   .services .colection{
+        width: 100%;
+    }
+    .portfolio > div{
+        flex-wrap: wrap;
+    }
+    .portfolio >div div{
+        flex-grow: 1;
+    }
+    .portfolio >div div:not(div:last-child){
+         margin-right: 5%;
+
+    }
+}
+@media (max-width:1150px) {
+    .portfolio >div div:nth-child(2){
+         margin-right: 0%;
+
+    } 
+    .about .img {
+        width: 50%;
+    }
+    .about >div {
+        flex-wrap:wrap ;
+        justify-content: center;
+
+    }
+
+    .about > div div {
+        flex-grow: 1;
+
+    }
+    .about .img::after,
+    .about .img::before{
+        display: none;
+    }
+    .about hr {
+        margin-left: 20%;
+    }
+ 
+}
+@media (max-width:755px) {
+    .portfolio >div div {
+        width: 443px;
+    } 
+    .portfolio >div div:last-of-type {
+        margin-right:5% ;
+    } 
+}

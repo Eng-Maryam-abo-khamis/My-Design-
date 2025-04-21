@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.page{
+    width: 100%;
+    font-family: cursive;
+    position: relative;
+}
+nav{
+    padding-left:  10%;
+    padding-right:  10%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > div{
+    display: inline-block;
+}
+nav div img{
+    width: 90px;
+}
+.list-line{
+    overflow: hidden;
+    height: 60px;
+    margin-top: 100%;
+}
+.list-line div div{
+    width:35px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: black;
+    transition: .5s ease;
+
+}
+.list-line div.mid{
+    margin-left: 50%;
+}
+.choice-list{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top:60px;
+    right:11%;
+}
+.choice-list li a{
+    background-color: transparent;
+    margin-bottom: 1px;
+    text-decoration: none;
+    color:black;
+    font-weight: 400;
+    padding-right: 100px;
+}
+.choice-list li{
+    border-bottom: 2px solid #ccc;
+    width: 190px;
+    list-style: none;
+    padding: 10px 40px 10px 15px;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+
+.list-line:hover div.mid{
+    margin-left: 0%;
+}
+.list-line:hover .choice-list{
+    display: inline;
+
+}
+.choice-list li:hover{
+    padding-left: 30px;
+}
+section {
+    background-image: url(../image/image_leon/landing.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+}
+section div h1{
+    color: aqua;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+section p{
+    line-height: 40px;
+    font-size: 2em;
+}
+.explain {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #eee;
+    padding:40px 40px 70px 40px;
+
+}
+.explain > div {
+    width: calc((100% - 120px)/3);
+    margin: 15px;
+    min-width: 288px;
+
+}
+.explain > div:not(div:last-child){
+    flex-grow: 1;
+}
+.explain >div:last-child{
+    align-self: center;
+}
+.explain >div > div {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px;
+    margin-left: 50%;
+    transform: translateX(-100%);
+}
+.explain >div h3 {
+    margin: 20px 0;
+}
+.explain > div  p{
+    font-size: 1.3em;
+    color: #908484;
+}
+.services {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.services .colection {
+    /* font-size: 1.3em; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    padding: 20px;
+    margin-left:10% ;
+}
+.colection > div {
+    width:  calc((100% - 12%)/2);
+    min-width: 260px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    flex-grow: 1;
+}
+.colection h3 {
+    margin: 15px 0;
+}
+.colection > div::before {
+    position: absolute;
+    left: -35px;
+    top: 15px
+}
+.colection p {
+    color: #908484;
+    line-height: 35px;
+}
+.colection > div:nth-child(1):before {
+    content: "👁️‍🗨️";
+}
+.colection > div:nth-child(2):before {
+    content: "💎";
+}
+.colection > div:nth-child(3):before {
+    content: "🕸️";
+}
+.colection > div:nth-child(4):before {
+    content:"🖊️"
+}
+.services > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .img-ex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: end;
+    width: 40%;
+    position: relative;
+
+}
+.img-ex img{
+    width: 55%;
+}
+.img-ex::after{
+    content: "";
+    height: 124%;
+    width: 21%;
+    position: absolute;
+    background-color: rgb(55, 61, 79);
+    right: 65px;
+    z-index: -1;
+    top: -52px;
+}
+::selection {
+    color: #fff;
+    background-color: rgb(88, 88, 251);
+}
+.portfolio{
+    background-color: #eee;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 100px;
+    margin: 30px 0;
+}
+
+.portfolio >div {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.portfolio >div div {
+    width: calc((100% - 130px  )/3);
+    background-color: #fff;
+    min-width: 296px;
+    max-width: 443px;
+    margin-bottom: 40px;
+
+}
+ 
+.portfolio >div div img {
+    width: 100%;
+}
+.portfolio >div div h3 {
+    margin: 30px 0 15px 0;
+    padding-left:15px ;
+}
+.portfolio >div div p {
+    padding: 15px;
+
+}
+.about {
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    margin-bottom: 200px;
+}
+h1{
+    text-align: center;
+    font-size: 6em;
+    color: #ccc;
+    margin-top: 40px;
+    padding: 50px;
+}
+h1 p{
+    color: #908484;
+    font-size: 0.3em;
+}
+.about >div {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    text-align: center;
+}
+.about > div img {
+    height:360px;
+}
+ 
+ 
+
+.about >div div  {
+    width: 50%;
+    min-width: 451px;
+    max-width:777px ;
+
+}
+.about >div div p {
+    line-height: 26px;
+}
+.about >div div  p:nth-child(1){
+    font-weight: bold;
+}
+.about hr {
+    border-bottom: 1px solid aqua;
+    width: 60%;
+    margin: 30px 0;
+    margin-left: 5px;
+}
+.about .img{
+    width: 27%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 65px;
+
+}
+.about .img::before  {
+    content: "";
+    height: 120%;
+    width:90px;
+    position: absolute;
+    background-color: #eee;
+    left: 62px;
+    z-index: -1;
+    top: -52px;
+}
+.about .img::after  {
+    content: "";
+    height: 84%;
+    width: 80px;
+    position: absolute;
+    background-color: transparent;
+    left: 301px;
+    z-index: -1;
+    top: -52px;
+    border-bottom: 70px solid #04a1a1b3;
+    border-left: 78px solid #04a1a1b3;
+}
+.contact {
+    height: fit-content;
+    width: 100%;
+    background-color:#eee ;
+    padding-bottom: 20px;
+}
+.contact h3 ,
+.contact  div  {
+    text-align: center;
+    font-weight: bold;
+}
+.contact h3 {
+    margin: 20px;
+    color: #000;
+    font-size: 2.6em;
+
+}
+.contact a{
+    text-decoration: none;
+    color: aqua;
+    font-size: 3em;
+
+}
+.contact .email >p{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+footer {
+    height: 80px;
+    background-color: #24464f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+footer p span{
+color: aqua;
+}
