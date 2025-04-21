@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+ }
+ .container {
+  background-color: black;
+  width: 320px;
+  height: 320px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+ }
+ .container::before {
+  content: "";
+  width: 325px;
+  height: 325px;
+ 
+  background-color: black;
+  z-index: -1;
+  position: absolute;
+
+ }
+ .container::after {
+  content: "";
+  width: 335px;
+  height: 335px;
+  padding: 20px;
+  background-color: #eee;
+  z-index: -2;
+  position: absolute;
+
+ }
+ .container div{
+  width: 40px;
+  height: 40px;
+   
+  display: inline-block;
+ }
+ .container div.white{
+  background-color: white;
+ }
+ .container div.black{
+  background-color: black;
+ } 

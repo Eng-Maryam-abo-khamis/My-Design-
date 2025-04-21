@@ -1,0 +1,67 @@
+div.bar {
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    color: white;
+}
+input {
+    padding: 10px;
+    background-color: #ffffff;
+    border:none;
+    border-radius: 2px;
+}
+input ::placeholder{
+    color: #787878;
+}
+input:disabled{
+    padding-left: 40px;
+    position: relative;
+
+}
+.dis{
+    display: inline-block;
+}
+.dis::before{
+content: "$";
+    position: absolute;
+    color: #00000091;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    background-color: #d2d2d2;
+    z-index: 1;
+}
+input[type="button"]{
+    background-color: #1eb6b6;
+    color:#ffffff;
+}
+select{
+    border:none;
+    color: #787878;
+    padding: 9px 0px 10px 0px;
+    border-radius: 2px;
+}
+select[name="cat"]{
+    width:  90px;
+} 
+select[name="type"]{
+    width:  60px;
+}
+article{
+    background-color: #1eb6b6;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+h1{
+    font-weight: 100;
+}
+p{
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 10px;
+}

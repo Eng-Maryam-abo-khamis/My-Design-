@@ -1,0 +1,48 @@
+.page {
+    width: 660px;
+    background-color: #eeeeee8c;
+    padding: 30px 15px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3px auto;
+}
+.page form > div.two-column {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(3 ,1fr);
+}
+.page form > div.two-column label{
+    display: block;
+    margin-bottom: 10px;
+}
+div.two-column label sup {
+    color: red;
+}
+div.textarea {
+    grid-row :2/4 ;
+    grid-column: 2/3;
+}
+div.textarea textarea {
+    border:none;
+    width: 328px;
+    height: 116px;
+    border-bottom: 1px solid #cec1c1;
+}
+:focus {
+    outline: none;
+}
+div.two-column  input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #cec1c1;
+    margin-bottom: 10px;
+}
+div.Register input{
+    width:100%;
+    padding: 10px;
+    background: #2e9391;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
