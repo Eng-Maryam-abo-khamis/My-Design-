@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-main{
+    display: flex;
+    margin: auto;
+    width: 966px;
+    justify-content:space-between ;
+    overflow: hidden;
+    background-color:#eee;
+    padding: 30px 20px;
+
+}
+
+img{
+    height: 183px;
+    width: 295px;
+
+}
+.card {
+    width :calc((100% - 40px)/3);
+    overflow: hidden;  
+    background-color: #ffffff;
+     
+}
+ .text{
+    padding: 20px 10px;
+ }
+.card .parg {
+    color: #a0a0a0;
+    margin: 20px 0px;
+}
+/* .parg.two {
+    margin-bottom: 40px;
+} */
+.explain{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+}
+.ex {
+    margin-right: 10px;
+    position: relative;
+}
+ 
+h3{
+    display: inline;
+    margin: 0;
+    width: fit-content;
+    font-size: medium;
+}
+span{
+    color: #37adad;
+    font-size: larger;
+}
+.form {
+    background-color: #a0a0a0;
+    width: 40px;
+    height: 30px;
+    border-radius: 4px;
+    position: relative;
+    margin: 20px 10px;
+   
+}
+.form::before,
+.form::after {
+    content: "";
+    background-color: #a0a0a0;
+    width: 17px;
+    height: 10px;
+    border-radius: 5px 5px 2px 2px;
+    top: -12px;
+    position: absolute;
+}
+.form::before{
+    right:2px;
+}
+.form::after{
+    left:2px;
+}
+.form p {
+    margin-left: 50px;
+}
+.form-doush img  {
+    width: 50px;
+    height: 50px;
+}
+.form-doush p {
+    display: inline;
+    position: relative;
+    top:-13px
+}
+.area {
+    border:3px solid   ;
+    border-color: #a0a0a0  #ccc#ccc#a0a0a0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top:16px
+}
+.area::after,
+.area::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #a0a0a0;
+    position: absolute;
+}
+.area::after{
+    top: -4px;
+    left: -4px;
+}
+.area::before{
+    right: -4px; 
+    top: -4px;
+
+}
+.cir-area::after,
+.cir-area::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #a0a0a0;
+    position: absolute;
+}
+.cir-area::after{
+    bottom: 23px;
+    left: -2px;
+}
+.cir-area::before{
+    bottom: 22px;
+    right: 5px;
+    background-color: #ccc;
+
+ }
+ .distance{
+    display: inline;
+    font-size: small;
+    position: absolute;
+    top: 46px;
+    margin-left: 32px;
+}
+.post {
+    font-size: small;
+    color: #a0a0a0;
+    position: absolute;
+    top: 45px;
+    left: 241px;
+}
+.card.one{
+    position: relative;
+}
+.card-main::before{
+    content: "Featured";
+    padding: 5px 10px;
+    background-color: #cb613b;
+    color: #ffffff;
+    position: absolute;
+    top:12px;
+    z-index: 1;
+}
+.card-main::after{
+    content: "";
+    border: 18px solid  ;
+    border-color: transparent transparent transparent #cb613b;
+    position: absolute;
+    top: 12px;
+    left: 107px
+}
+::selection{
+    color: #cb613b;
+    background-color: #a0a0a0;
+}
+.img-card{
+    position: relative;
+}
+.card.two {
+    position: relative;
+}
+.card-main{
+    position: relative;
+}
+.card.two .img-card::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4facc5b5;
+    top: 0px;
+    left: 0px;
+
+}
+.card.two .img-card::before{
+    content: "View Properity";
+    position: absolute;
+    padding: 17px;
+    border: 1px solid white;
+    margin-left: 25%;
+    margin-top: 25%;
+    color: #ffffff;
+    z-index: 1;
+}
